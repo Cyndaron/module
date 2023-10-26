@@ -5,5 +5,9 @@ namespace Cyndaron\Module;
 
 interface UrlProvider
 {
-    public function url(array $linkParts): ?string;
+    /**
+     * @param string[] $linkParts
+     * @return string|null
+     */
+    public function url(array $linkParts): string|null;
 }
